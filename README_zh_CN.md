@@ -4,13 +4,13 @@
 
 * * *
 
-[![MIT 许可证](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE) [![生成状态](https://msrasrg.visualstudio.com/NNIOpenSource/_apis/build/status/integration-test-local?branchName=master)](https://msrasrg.visualstudio.com/NNIOpenSource/_build/latest?definitionId=17&branchName=master) [![问题](https://img.shields.io/github/issues-raw/Microsoft/nni.svg)](https://github.com/Microsoft/nni/issues?q=is%3Aissue+is%3Aopen) [![Bug](https://img.shields.io/github/issues/Microsoft/nni/bug.svg)](https://github.com/Microsoft/nni/issues?q=is%3Aissue+is%3Aopen+label%3Abug) [![拉取请求](https://img.shields.io/github/issues-pr-raw/Microsoft/nni.svg)](https://github.com/Microsoft/nni/pulls?q=is%3Apr+is%3Aopen) [![版本](https://img.shields.io/github/release/Microsoft/nni.svg)](https://github.com/Microsoft/nni/releases) [![进入 https://gitter.im/Microsoft/nni 聊天室提问](https://badges.gitter.im/Microsoft/nni.svg)](https://gitter.im/Microsoft/nni?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![文档状态](https://readthedocs.org/projects/nni/badge/?version=latest)](https://nni.readthedocs.io/zh/latest/?badge=latest)
+[![MIT 许可证](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE) [![生成状态](https://msrasrg.visualstudio.com/NNIOpenSource/_apis/build/status/full%20test%20-%20linux?branchName=master)](https://msrasrg.visualstudio.com/NNIOpenSource/_build/latest?definitionId=62&branchName=master) [![问题](https://img.shields.io/github/issues-raw/Microsoft/nni.svg)](https://github.com/Microsoft/nni/issues?q=is%3Aissue+is%3Aopen) [![Bug](https://img.shields.io/github/issues/Microsoft/nni/bug.svg)](https://github.com/Microsoft/nni/issues?q=is%3Aissue+is%3Aopen+label%3Abug) [![拉取请求](https://img.shields.io/github/issues-pr-raw/Microsoft/nni.svg)](https://github.com/Microsoft/nni/pulls?q=is%3Apr+is%3Aopen) [![版本](https://img.shields.io/github/release/Microsoft/nni.svg)](https://github.com/Microsoft/nni/releases) [![进入 https://gitter.im/Microsoft/nni 聊天室提问](https://badges.gitter.im/Microsoft/nni.svg)](https://gitter.im/Microsoft/nni?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![文档状态](https://readthedocs.org/projects/nni/badge/?version=latest)](https://nni.readthedocs.io/zh/latest/?badge=latest)
 
 [English](README.md)
 
-**NNI (Neural Network Intelligence)** 是一个轻量但强大的工具包，帮助用户**自动**的进行[特征工程](docs/zh_CN/FeatureEngineering/Overview.md)，[神经网络架构搜索](docs/zh_CN/NAS/Overview.md)，[超参调优](docs/zh_CN/Tuner/BuiltinTuner.md)以及[模型压缩](docs/zh_CN/Compressor/Overview.md)。
+**NNI (Neural Network Intelligence)** 是一个轻量但强大的工具包，帮助用户**自动**的进行[特征工程](docs/zh_CN/FeatureEngineering/Overview.md)，[神经网络架构搜索](docs/zh_CN/NAS/Overview.md)，[超参调优](docs/zh_CN/Tuner/BuiltinTuner.md)以及[模型压缩](docs/zh_CN/Compression/Overview.md)。
 
-NNI 管理自动机器学习 (AutoML) 的 Experiment，**调度运行**由调优算法生成的 Trial 任务来找到最好的神经网络架构和/或超参，支持**各种训练环境**，如[本机](docs/zh_CN/TrainingService/LocalMode.md)，[远程服务器](docs/zh_CN/TrainingService/RemoteMachineMode.md)，[OpenPAI](docs/zh_CN/TrainingService/PaiMode.md)，[Kubeflow](docs/zh_CN/TrainingService/KubeflowMode.md)，[基于 K8S 的 FrameworkController（如，AKS 等)](docs/zh_CN/TrainingService/FrameworkControllerMode.md)， [DLWorkspace](docs/zh_CN/TrainingService/DLTSMode.md) (又称 DLTS)</a>, [AML](docs/zh_CN/TrainingService/AMLMode.md) (Azure Machine Learning) 以及其它环境。
+NNI 管理自动机器学习 (AutoML) 的 Experiment，**调度运行**由调优算法生成的 Trial 任务来找到最好的神经网络架构和/或超参，支持**各种训练环境**，如[本机](docs/zh_CN/TrainingService/LocalMode.md)，[远程服务器](docs/zh_CN/TrainingService/RemoteMachineMode.md)，[OpenPAI](docs/zh_CN/TrainingService/PaiMode.md)，[Kubeflow](docs/zh_CN/TrainingService/KubeflowMode.md)，[基于 K8S 的 FrameworkController（如，AKS 等）](docs/zh_CN/TrainingService/FrameworkControllerMode.md)， [DLWorkspace (又称 DLTS)](docs/zh_CN/TrainingService/DLTSMode.md), [AML (Azure Machine Learning)](docs/en_US/TrainingService/AMLMode.md), [AdaptDL（又称 ADL）](docs/en_US/TrainingService/AdaptDLMode.md) 和其他云服务。
 
 ## **使用场景**
 
@@ -19,7 +19,7 @@ NNI 管理自动机器学习 (AutoML) 的 Experiment，**调度运行**由调优
 * 想要更容易**实现或试验新的自动机器学习算法**的研究员或数据科学家，包括：超参调优算法，神经网络搜索算法以及模型压缩算法。
 * 在机器学习平台中**支持自动机器学习**。
 
-### **[NNI v1.8 已发布！](https://github.com/microsoft/nni/releases) &nbsp;[<img width="48" src="docs/img/release_icon.png" />](#nni-released-reminder)**
+### **[NNI v1.9 已发布！](https://github.com/microsoft/nni/releases) &nbsp;[<img width="48" src="docs/img/release_icon.png" />](#nni-released-reminder)**
 
 ## **NNI 功能一览**
 
@@ -129,24 +129,25 @@ NNI 提供命令行工具以及友好的 WebUI 来管理训练的 Experiment。 
               <li><a href="docs/zh_CN/NAS/Proxylessnas.md">ProxylessNAS</a></li>
               <li><a href="docs/zh_CN/Tuner/BuiltinTuner.md#NetworkMorphism">Network Morphism</a></li>
               <li><a href="docs/zh_CN/NAS/TextNAS.md">TextNAS</a></li>
+              <li><a href="docs/en_US/NAS/Cream.md">Cream</a></li>
             </ul>
           </ul>
-          <a href="docs/zh_CN/Compressor/Overview.md">模型压缩</a>
+          <a href="docs/en_US/Compression/Overview.md">模型压缩</a>
           <ul>
             <b>剪枝</b>
             <ul>
-              <li><a href="docs/zh_CN/Compressor/Pruner.md#agp-pruner">AGP Pruner</a></li>
-              <li><a href="docs/zh_CN/Compressor/Pruner.md#slim-pruner">Slim Pruner</a></li>
-              <li><a href="docs/zh_CN/Compressor/Pruner.md#fpgm-pruner">FPGM Pruner</a></li>
-              <li><a href="docs/zh_CN/Compressor/Pruner.md#netadapt-pruner">NetAdapt Pruner</a></li>
-              <li><a href="docs/zh_CN/Compressor/Pruner.md#simulatedannealing-pruner">SimulatedAnnealing Pruner</a></li>
-              <li><a href="docs/zh_CN/Compressor/Pruner.md#admm-pruner">ADMM Pruner</a></li>
-              <li><a href="docs/zh_CN/Compressor/Pruner.md#autocompress-pruner">AutoCompress Pruner</a></li>
+              <li><a href="docs/en_US/Compression/Pruner.md#agp-pruner">AGP Pruner</a></li>
+              <li><a href="docs/en_US/Compression/Pruner.md#slim-pruner">Slim Pruner</a></li>
+              <li><a href="docs/en_US/Compression/Pruner.md#fpgm-pruner">FPGM Pruner</a></li>
+              <li><a href="docs/en_US/Compression/Pruner.md#netadapt-pruner">NetAdapt Pruner</a></li>
+              <li><a href="docs/en_US/Compression/Pruner.md#simulatedannealing-pruner">SimulatedAnnealing Pruner</a></li>
+              <li><a href="docs/en_US/Compression/Pruner.md#admm-pruner">ADMM Pruner</a></li>
+              <li><a href="docs/en_US/Compression/Pruner.md#autocompress-pruner">AutoCompress Pruner</a></li>
             </ul>
             <b>量化</b>
             <ul>
-              <li><a href="docs/zh_CN/Compressor/Quantizer.md#qat-quantizer">QAT Quantizer</a></li>
-              <li><a href="docs/zh_CN/Compressor/Quantizer.md#dorefa-quantizer">DoReFa Quantizer</a></li>
+              <li><a href="docs/en_US/Compression/Quantizer.md#qat-quantizer">QAT Quantizer</a></li>
+              <li><a href="docs/en_US/Compression/Quantizer.md#dorefa-quantizer">DoReFa Quantizer</a></li>
             </ul>
           </ul>
           <a href="docs/zh_CN/FeatureEngineering/Overview.md">特征工程（测试版）</a>
@@ -166,11 +167,13 @@ NNI 提供命令行工具以及友好的 WebUI 来管理训练的 Experiment。 
         <li><a href="docs/zh_CN/TrainingService/RemoteMachineMode.md">远程计算机</a></li>
         <li><a href="docs/zh_CN/TrainingService/AMLMode.md">AML(Azure Machine Learning)</a></li>
         <li><b>基于 Kubernetes 的平台</b></li>
-            <ul><li><a href="docs/zh_CN/TrainingService/PaiMode.md">OpenPAI</a></li>
-            <li><a href="docs/zh_CN/TrainingService/KubeflowMode.md">Kubeflow</a></li>
-            <li><a href="docs/zh_CN/TrainingService/FrameworkControllerMode.md">基于 Kubernetes（AKS 等）的 FrameworkController</a></li>
-            </ul>
-            <ul><li><a href="docs/zh_CN/TrainingService/DLTSMode.md">DLWorkspace (又称 DLTS)</a></li>
+        <ul>
+          <li><a href="docs/zh_CN/TrainingService/PaiMode.md">OpenPAI</a></li>
+          <li><a href="docs/zh_CN/TrainingService/KubeflowMode.md">Kubeflow</a></li>
+          <li><a href="docs/zh_CN/TrainingService/FrameworkControllerMode.md">基于 Kubernetes（AKS 等）的 FrameworkController</a></li>
+          <li><a href="docs/en_US/TrainingService/DLTSMode.md">DLWorkspace（又称  DLTS）</a></li>
+          <li><a href="docs/en_US/TrainingService/AdaptDLMode.md">AdaptDL（又称 ADL）</a></li>
+        </ul>
       </ul>
       </td>
     </tr>
@@ -240,7 +243,7 @@ Linux 和 macOS 下 NNI 系统需求[参考这里](https://nni.readthedocs.io/zh
 * 通过克隆源代码下载示例。
    
    ```bash
-   git clone -b v1.8 https://github.com/Microsoft/nni.git
+   git clone -b v1.9 https://github.com/Microsoft/nni.git
    ```
 
 * 运行 MNIST 示例。
@@ -289,8 +292,8 @@ You can use these commands to get more information about the experiment
 * 在浏览器中打开 `Web UI url`，可看到下图的 Experiment 详细信息，以及所有的 Trial 任务。 查看[这里](docs/zh_CN/Tutorial/WebUI.md)的更多页面。
 
 <table style="border: none">
-    <th><img src="./docs/img/webui_overview_page.png" alt="drawing" width="395"/></th>
-    <th><img src="./docs/img/webui_trialdetail_page.png" alt="drawing" width="410"/></th>
+    <th><img src="./docs/img/webui-img/full-oview.png" alt="drawing" width="395" height="300"/></th>
+    <th><img src="./docs/img/webui-img/full-detail.png" alt="drawing" width="410" height="300"/></th>
 </table>
 
 ## **文档**
@@ -328,8 +331,8 @@ You can use these commands to get more information about the experiment
    * 使用 NNI 的 [矩阵分解超参调优](https://github.com/microsoft/recommenders/blob/master/notebooks/04_model_select_and_optimize/nni_surprise_svd.ipynb)
    * [scikit-nni](https://github.com/ksachdeva/scikit-nni) 使用 NNI 为 scikit-learn 开发的超参搜索。
 * ### **相关文章** ### 
-   * [超参数优化的对比](docs/zh_CN/CommunitySharings/HpoComparison.md)
-   * [神经网络结构搜索的对比](docs/zh_CN/CommunitySharings/NasComparison.md)
+   * [超参数优化的对比](docs/en_US/CommunitySharings/HpoComparison.md)
+   * [神经网络结构搜索的对比](docs/en_US/CommunitySharings/NasComparison.md)
    * [并行化顺序算法：TPE](docs/zh_CN/CommunitySharings/ParallelizingTpeSearch.md)
    * [使用 NNI 为 SVD 自动调参](docs/zh_CN/CommunitySharings/RecommendersSvd.md)
    * [使用 NNI 为 SPTAG 自动调参](docs/zh_CN/CommunitySharings/SptagAutoTune.md)
